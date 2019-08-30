@@ -52,7 +52,11 @@ client.on('message', msg => {  //WESO#0001
     }
   });
 
-
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'سؤال') {  //WESO#0001
+      msg.reply('**تحب جلاد؟ **');  //WESO#0001
+    }
+  });
   
    client.on('message', msg => {  //WESO#0001
     if (msg.content === 'هلا') {  //WESO#0001
@@ -60,10 +64,18 @@ client.on('message', msg => {  //WESO#0001
     }
   });
 
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === '2سؤال') {  //WESO#0001
+      msg.reply('**شو اسم امك؟ **');  //WESO#0001
+    }
+  });
 
 
-
-  
+  client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'مين انا') {  //WESO#0001
+      msg.reply('**انت زق السيرفر**');  //WESO#0001
+    }
+  });
   client.on("message", message => {  //WESO#0001
     if(message.content.startsWith(prefix + 'v2min')) {  //WESO#0001
      let args = message.content.split(" ").slice(1);  //WESO#0001
@@ -1975,7 +1987,7 @@ client.on('message', message => {
                m.delete()
            }, 32000)
              setTimeout(function() {
-               message.channel.send('** ! تمت عمليه التهكير بنجاح **')
+               message.channel.send('** ! تمت عمليه التهكير يا زق  **')
            }, 33000)
            });
          }
@@ -2086,9 +2098,9 @@ client.on("guildMemberAdd", member => {
         message.delete();
         message.guild.member(message.author).addRole(message.guild.roles.find(r => r.name === 'Muted'));
         let embedP = new Discord.RichEmbed()
-        .setTitle('❌ | تمت معاقبتك')
+        .setTitle('❌ | تمت معاقبتك يا زق')
         .setAuthor(message.author.username, message.author.avatarURL)
-        .addField(`** لقد قمت بمخالفة قوانين السيرفر من خلال نشر روابط اضافة الى سيرفرات اخرى  **` , `**ملاحظة  : إن كآن هذآ الاسكات عن طريق الخطأ الرجاء التوجه والتكلم مع الادآرة**`)
+        .addField(`** لقد قمت بمخالفة قوانين السيرفر من خلال نشر روابط اضافة الى سيرفرات اخرى  **` , `**ملاحظة  : إن كآن هذآ الاسكات عن طريق الخطأ يا زق الرجاء التوجه والتكلم مع الادآرة**`)
         .addField(`by`,`LegendSystem. `)
         .setColor('RED')
         .setThumbnail(message.author.avatarURL)
@@ -2105,12 +2117,12 @@ var prefix = "-";
        if(message.content === prefix + "mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
+   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات يا زق__**');
               message.channel.overwritePermissions(message.guild.id, {
             SEND_MESSAGES: false
 
               }).then(() => {
-                  message.reply("**__تم تقفيل الشات__ ✅ **")
+                  message.reply("**__تم تقفيل الشات يا اميرة__ ✅ **")
               });
                 }
 
@@ -2122,7 +2134,7 @@ var prefix = "-";
             SEND_MESSAGES: true
 
               }).then(() => {
-                  message.reply("**__تم فتح الشات__✅**")
+                  message.reply("**__تم فتح الشات يا اميرة__✅**")
               });
     }
        
@@ -2221,7 +2233,7 @@ client.on('message', message => {
     .setDescription(`**حالات الاعضاء🔋
 :green_heart: اونلاين   ${message.guild.members.filter(m=>m.presence.status == 'online').size}
 :heart:مشغول       ${message.guild.members.filter(m=>m.presence.status == 'dnd').size}
-:yellow_heart: خامل      ${message.guild.members.filter(m=>m.presence.status == 'idle').size}   
+:yellow_heart: مخمول      ${message.guild.members.filter(m=>m.presence.status == 'idle').size}   
 :black_heart: اوفلاين   ${message.guild.members.filter(m=>m.presence.status == 'offline').size} 
 :blue_heart:   الكل  ${message.guild.memberCount}**`)         
          message.channel.send({embed});
@@ -2873,7 +2885,7 @@ if (!message.content.startsWith(prefix)) return;
 		let user = message.mentions.users.first();
 		let muteRole = message.guild.roles.find("name", "Muted");
 		if (!muteRole) return message.reply("** لا يوجد رتبة الميوت 'Muted' **").then(msg => {msg.delete(5000)});
-		if (message.mentions.users.size < 1) return message.reply('** يجب عليك المنشن اولاً **').then(msg => {msg.delete(5000)});
+		if (message.mentions.users.size < 1) return message.reply('** يجب عليك المنشن أولاً يا زق **').then(msg => {msg.delete(5000)});
 		let reason = message.content.split(" ").slice(2).join(" ");
 		message.guild.member(user).addRole(muteRole);
 		const muteembed = new Discord.RichEmbed()
@@ -4819,7 +4831,7 @@ client.on('message',  (message) => {
 
   message.channel.send({
     embed: {
-      description: `${message.author.username} اداك بالقلم علي وشك ${user.username}!`,
+      description: `${message.author.username} اداك بالقلم علي وشك الزق ${user.username}!`,
       image: {
         url: slaps[Math.floor(Math.random() * slaps.length)]
       }

@@ -13,6 +13,12 @@ client.on('message', msg => {  //WESO#0001
       msg.reply('** :wink: وِلِـكُمِـ ﻧَوِرُتْ   :sparkling_heart:**');  //WESO#0001
     }
   });
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'وين اميرة') {  //WESO#0001
+      msg.reply('**اعطيها طلب فريند و رح تقبلك انشاء الله**');  //WESO#0001
+    }
+  });
+
 
 client.on('message', msg => {  //WESO#0001
     if (msg.content === 'اميرة') {  //WESO#0001

@@ -91,13 +91,13 @@ client.on('message', msg => {  //WESO#0001
   });
 
 client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'لا') {  //WESO#0001
+    if (msg.content === '2لا') {  //WESO#0001
       msg.reply('**🙂👌هه لأنك مضغوط منها**');  //WESO#0001
     }
   });
 
 client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'يب') {  //WESO#0001
+    if (msg.content === '2يب') {  //WESO#0001
       msg.reply('**😂😂👌أميرة تجيك بالمطرقة تدهسك**');  //WESO#0001
     }
   });

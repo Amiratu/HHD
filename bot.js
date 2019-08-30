@@ -25,6 +25,12 @@ client.on('message', msg => {  //WESO#0001
     }
   });
 
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'مين الادمين') {  //WESO#0001
+      msg.reply('**جلاد-ياسين اللي يبي يكون ادمين يجي خاص**');  //WESO#0001
+    }
+  });
+
 
 client.on('message', msg => {  //WESO#0001
     if (msg.content === 'اميرة') {  //WESO#0001
@@ -35,14 +41,14 @@ client.on('message', msg => {  //WESO#0001
 
 client.on('message', msg => {  //WESO#0001
     if (msg.content === 'احبك') {  //WESO#0001
-      msg.reply('**لاتحتك يا اخوي لو سمحت**');  //WESO#0001
+      msg.reply('**تدري شي**');  //WESO#0001
     }
   });
   
 
   client.on('message', msg => {  //WESO#0001
     if (msg.content === 'احبك') {  //WESO#0001
-      msg.reply('**حبك برص يا سافل**');  //WESO#0001
+      msg.reply('**حبك مثل الزق يا كلب**');  //WESO#0001
     }
   });
 

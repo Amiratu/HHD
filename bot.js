@@ -58,6 +58,26 @@ client.on('message', msg => {  //WESO#0001
     }
   });
   
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'لا') {  //WESO#0001
+      msg.reply('**انت زق يا كلب ما تحب جلاد**');  //WESO#0001
+    }
+  });
+
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'نعم') {  //WESO#0001
+      msg.reply('**نحضر للعرس**');  //WESO#0001
+    }
+  });
+
+
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'احبو كاخ') {  //WESO#0001
+      msg.reply('**امم حلو**');  //WESO#0001
+    }
+  });
+
+
    client.on('message', msg => {  //WESO#0001
     if (msg.content === 'هلا') {  //WESO#0001
       msg.reply('**هلا بالحب :heart: **');  //WESO#0001

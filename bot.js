@@ -31,6 +31,12 @@ client.on('message', msg => {  //WESO#0001
     }
   });
 
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'باي') {  //WESO#0001
+      msg.reply('**🙂😂الله لا يرجعك**');  //WESO#0001
+    }
+  });
+
 
 client.on('message', msg => {  //WESO#0001
     if (msg.content === 'اميرة') {  //WESO#0001

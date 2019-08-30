@@ -19,6 +19,12 @@ client.on('message', msg => {  //WESO#0001
     }
   });
 
+client.on('message', msg => {  //WESO#0001
+    if (msg.content === 'مين اونر البوت') {  //WESO#0001
+      msg.reply('**أميرة الهيوانة**');  //WESO#0001
+    }
+  });
+
 
 client.on('message', msg => {  //WESO#0001
     if (msg.content === 'اميرة') {  //WESO#0001

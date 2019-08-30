@@ -15,8 +15,8 @@ client.on('message', msg => {  //WESO#0001
   });
 
 client.on('message', msg => {  //WESO#0001
-    if (msg.content === 'ويسو') {  //WESO#0001
-      msg.reply('**ويسو مات**');  //WESO#0001
+    if (msg.content === 'اميرة') {  //WESO#0001
+      msg.reply('**أميرة ماتت**');  //WESO#0001
     }
   });
 
@@ -38,7 +38,7 @@ client.on('message', msg => {  //WESO#0001
   
    client.on('message', msg => {  //WESO#0001
     if (msg.content === 'هلا') {  //WESO#0001
-      msg.reply('**هلا بيك :heart: **');  //WESO#0001
+      msg.reply('**هلا بالحب :heart: **');  //WESO#0001
     }
   });
 
